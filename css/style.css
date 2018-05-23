@@ -16,3 +16,11 @@
 .container {
 	width: 95%;
 }
+
+.fixed {
+  [type="checkbox"], [type="radio"] {
+    + label {   
+      pointer-events: auto;
+    }
+  }
+}

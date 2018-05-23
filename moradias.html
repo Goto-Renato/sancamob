@@ -9,6 +9,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+      
+      <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+      </script>
+
 </head>
 <body>
   <nav class="red darken-3" role="navigation">
@@ -35,8 +46,49 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
+		
+		<div class="row">
+    	    <div class="col l4 m4 s12">
+    	    	<div class="offset-l2">
+    	    		<span class="offset-l2">Categoria</span>
+    	    	</div>
+    	    	<hr>
+				<input type="checkbox" id="checkbox_casa"><label for="checkbox_casa">casas</label>
+				<input type="checkbox" id="checkbox_ap"><label for="checkbox_ap">apartamentos</label>
+				<input type="checkbox" id="checkbox_rep"><label for="checkbox_rep">republicas</label>
+          </div>
+
+          	<div class="col l4 m4 s12">
+    	    	<span class="offset-l1">Cidade e Bairros</span>
+    	    	<hr>
+    	    	<div class="col l6 m6 s12">
+	    	    	<div class="input-field">
+	    	    		<select multiple>
+	    	    			<option value="1">sao carlos</option>
+	    	    			<option value="2">sao paulo</option>
+	    	    		</select>
+	    	    	</div>
+    	    	</div>
+	    	    <div class="col l6 m6 s12">
+	    	    	<div class="input-field">
+	    	    		<select multiple>
+	    	    			<option value="1">batata 1</option>
+	    	    			<option value="2">batata2</option>
+	    	    		</select>
+	    	    	</div>
+				</div>				
+			</div>
+          <div class="col l4 m4 s12">
+    	    	<span class="offset-l1">Valor</span>
+    	    	<hr>
+    	    		<p class="range-field">
+    	    			<input type="range" id="valormax" min="0" max="3000"/>
+    	    		</p>
+				
+          </div>
+    	</div>
+
       <div class="row">
-        
         <div class="col m4 s12">
           <div class="card">
             <div class="card-image">
